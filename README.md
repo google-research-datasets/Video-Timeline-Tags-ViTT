@@ -31,7 +31,7 @@ This dataset consists of human produced segment-level annotations for 8,169 vide
 }
 ```
 
-```id``` is the id for the video from YouTube-8M release, which was a randomly-generated ID to protect the privacy of uploaders.  The external YouTube ID can be looked up following the instructions on this page, as long as the video remains public on YouTube.
+```id``` is the id for the video from YouTube-8M release, which was a randomly-generated ID to protect the privacy of uploaders.  The external YouTube ID can be looked up following the instructions on [this page](http://research.google.com/youtube8m/video_id_conversion.html), as long as the video remains public on YouTube. 
   
 ```annotations``` contain a list of segment-level annotations.  In this example, the annotator had identified 5 sections in the video.  For each section, 
 - ```timestamp``` is the start time (in milliseconds) for that section, and 
