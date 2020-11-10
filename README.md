@@ -1,13 +1,11 @@
-# Video-Timeline-Tags-ViTT
+# Video Timeline Tags (ViTT)
 This repo provides the Video Timeline Tags (ViTT) dataset introduced in “Multimodal Pretraining for Dense Video Captioning”.  
-
 If you find the data or paper useful for your own work, please consider citing:
-
 ```
 [...]
 ```
 
-This dataset consists of human produced segment-level annotations for 8,169 videos.  Of these, 5,840 videos have been annotated once, and the rest of the videos have been annotated by 2 or more annotators.  A total of 12,461 annotations are released in ```ViTT-annotations.json```.  Below is an example annotation from the dataset:
+The ViTT dataset consists of human produced segment-level annotations for 8,169 videos.  Of these, 5,840 videos have been annotated once, and the rest of the videos have been annotated twice or more.  A total of 12,461 sets of annotations are released in ```ViTT-annotations.json```.  Below is an example set of annotations from the dataset:
 ```
 {
   "id": "FmTp",
@@ -36,11 +34,11 @@ This dataset consists of human produced segment-level annotations for 8,169 vide
 }
 ```
 
-```id``` is the id for the video from YouTube-8M release, which was a randomly-generated ID to protect the privacy of uploaders.  The external YouTube ID can be looked up following the instructions on [this page](http://research.google.com/youtube8m/video_id_conversion.html), as long as the video remains public on YouTube. 
-  
-```annotations``` contain a list of segment-level annotations.  In this example, the annotator had identified 5 sections in the video.  For each section, 
-- ```timestamp``` is the start time (in milliseconds) for that section, and 
-- ```tag``` is a free-text tag describing the content of that section concisely.  There are 3 annotations (from 3 different annotators) included for this video in the json file.
+Data fields:
+- ```id``` is the id for the video from YouTube-8M release, which was a randomly-generated ID to protect the privacy of uploaders.  The external YouTube ID can be looked up following the instructions on [this page](http://research.google.com/youtube8m/video_id_conversion.html), as long as the video remains public on YouTube. 
+- ```annotations``` contain a list of segment-level annotations.  In this example, the annotator had identified 5 sections in the video.  For each section, 
+  - ```timestamp``` is the start time (in milliseconds) for that section, and 
+  - ```tag``` is a free-text tag describing the content of that section concisely.  There are 3 annotations (from 3 different annotators) included for this video in the json file.
 
 Please refer to Appendix A.1 in the paper for details on the dataset construction and guidelines for human annotation.
 
