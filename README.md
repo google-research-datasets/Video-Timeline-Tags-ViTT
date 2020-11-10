@@ -40,7 +40,6 @@ Data fields:
   - ```timestamp``` is the start time (in milliseconds) for that section, and 
   - ```tag``` is a free-text tag describing the content of that section concisely.  There are 3 annotations (from 3 different annotators) included for this video in the json file.
 
-Please refer to Appendix A.1 in the paper for details on the dataset construction and guidelines for human annotation.
 
 For experiments described in the paper, we have additionally gone through the following steps:
 - Lower-case all tags
@@ -48,3 +47,6 @@ For experiments described in the paper, we have additionally gone through the fo
 - Use videos with one set of annotations as the training split, and randomly split those with 2 or 3 sets of annotations between dev and test sets.  
   - Note that some of the raw annotations do not contain segment-level annotations (e.g., when the raters consider the video to be not instructional), and are excluded from this data release.  We release the list of video ids in our training / dev / test sets (```[train|dev|test]_id.txt```) for reproducibility.  
   - Note also that there are 276 videos in the data release with more than 3 annotations.  These videos were not included in either the training split or the dev / test splits in experiments reported in the paper.  We are still including them in the json file for people who are interested in understanding inter-annotator agreement for this task.
+  
+Please refer to Appendix A.1 in the paper for details on the dataset construction and guidelines for human annotation.
+
