@@ -2,7 +2,7 @@
 This repo provides the Video Timeline Tags (ViTT) dataset introduced in “Multimodal Pretraining for Dense Video Captioning”.  
 
 
-This dataset consists of human produced segment-level annotations for 8,169 videos.  Of these, 5,840 videos have received one annotation, and the rest of the videos received two or more annotations.  A total of 12,461 annotations are released in ```ViTT-annotations.json```.  Below is an example annotation from the dataset:
+This dataset consists of human produced segment-level annotations for 8,169 videos.  Of these, 5,840 videos have been annotated once, and the rest of the videos have been annotated by 2 or more annotators.  A total of 12,461 annotations are released in ```ViTT-annotations.json```.  Below is an example annotation from the dataset:
 ```
 {
   "id": "FmTp",
@@ -41,7 +41,7 @@ Please refer to Appendix A.1 in the paper for details on the dataset constructio
 
 For experiments described in the paper, we have additionally gone through the following steps:
 - Lower-case all tags
-- Perform standardization of top tags according to Table 6 in the paper
-- Use videos with one raw annotation as the training split, and those with 2 or 3 raw annotations were randomly split between dev and test sets.  
+- Standardize top tags according to Table 6 in the paper
+- Use videos with one set of annotations as the training split, and randomly split those with 2 or 3 sets of annotations between dev and test sets.  
   - Note that some of the raw annotations do not contain segment-level annotations (e.g., when the raters consider the video to be not instructional), and are excluded from this data release.  We release the list of video ids in our training / dev / test sets (```[train|dev|test]_id.txt```) for reproducibility.  
   - Note also that there are 276 videos in the data release with more than 3 annotations.  These videos were not included in either the training split or the dev / test splits in experiments reported in the paper.  We are still including them in the json file for people who are interested in understanding inter-annotator agreement for this task.
