@@ -1,9 +1,21 @@
 # Video Timeline Tags (ViTT)
-This repo provides the Video Timeline Tags (ViTT) dataset introduced in “Multimodal Pretraining for Dense Video Captioning”.  
+
+## Introduction
+This repo provides the Video Timeline Tags (ViTT) dataset introduced in Multimodal Pretraining for Dense Video Captioning.
+
+Useful links: [arXiv](https://arxiv.org/abs/2011.11760) | [presentation](http://www.aacl2020virtualconference.org/paper_275.html) | [slides](https://docs.google.com/presentation/d/13xu7UxdRHawI2lmgb8YF74SJ-g5VWtTF7mo5LqBwOv0/edit?usp=sharing)
+
 If you find the data or paper useful for your own work, please consider citing:
 ```
-[...]
+@inproceedings{huang2020multimodal,
+  title={Multimodal Pretraining for Dense Video Captioning},
+  author={Huang, Gabriel and Pang, Bo and Zhu, Zhenhai and Rivera, Clara and Soricut, Radu},
+  booktitle={AACL-IJCNLP 2020},
+  year={2020}
+}
 ```
+
+## Dataset Description
 
 The ViTT dataset consists of human produced segment-level annotations for 8,169 videos.  Of these, 5,840 videos have been annotated once, and the rest of the videos have been annotated twice or more.  A total of 12,461 sets of annotations are released in ```ViTT-annotations.json```.  Below is an example set of annotations from the dataset:
 ```
