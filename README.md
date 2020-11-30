@@ -1,9 +1,6 @@
 # Video Timeline Tags (ViTT)
 
-## Introduction
-This repo provides the Video Timeline Tags (ViTT) dataset introduced in Multimodal Pretraining for Dense Video Captioning.
-
-Useful links: [arXiv](https://arxiv.org/abs/2011.11760) | [presentation](http://www.aacl2020virtualconference.org/paper_275.html) | [slides](https://docs.google.com/presentation/d/13xu7UxdRHawI2lmgb8YF74SJ-g5VWtTF7mo5LqBwOv0/edit?usp=sharing)
+This repo provides the Video Timeline Tags (ViTT) dataset introduced in [Multimodal Pretraining for Dense Video Captioning](https://arxiv.org/abs/2011.11760) ([arXiv](https://arxiv.org/abs/2011.11760) | [presentation](http://www.aacl2020virtualconference.org/paper_275.html) | [slides](https://docs.google.com/presentation/d/13xu7UxdRHawI2lmgb8YF74SJ-g5VWtTF7mo5LqBwOv0/edit?usp=sharing)).
 
 If you find the data or paper useful for your own work, please consider citing:
 ```
