@@ -14,6 +14,12 @@ If you find the data or paper useful for your own work, please consider citing:
 
 ## Dataset Description
 
+Data files for this dataset can be downloaded via the following links:
+- [ViTT-annotations.json](https://storage.googleapis.com/video-timeline-tags/ViTT-annotations.json)
+- [train_id.txt](https://storage.googleapis.com/video-timeline-tags/train_id.txt)
+- [dev_id.txt](https://storage.googleapis.com/video-timeline-tags/dev_id.txt)
+- [test_id.txt](https://storage.googleapis.com/video-timeline-tags/test_id.txt)
+
 The ViTT dataset consists of human produced segment-level annotations for 8,169 videos.  Of these, 5,840 videos have been annotated once, and the rest of the videos have been annotated twice or more.  A total of 12,461 sets of annotations are released in ```ViTT-annotations.json```.  Below is an example set of annotations from the dataset:
 ```
 {
